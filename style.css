@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #344e41;
+    font-family: Arial, sans-serif;
+    position: relative; /* Agregar posición relativa para el posicionamiento del div de fecha y hora */
+}
+
+h1 {
+    color: white;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #a3b18a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.team {
+    text-align: center;
+    margin: 10px;
+    background-color: #a3b18a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.team div {
+    margin: 5px;
+}
+
+.score {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px;
+    background-color: #a3b18a;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #a3b18a;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+}
+
+#period {
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #a3b18a;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    position: absolute; /* Posición absoluta para ubicar el div en la esquina inferior */
+    bottom: 20px;
+    right: 20px;
+    background-color: #dad7cd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #555;
+}
+
+/* Ajustes para el diseño responsivo */
+@media (max-width: 768px) {
+    .scoreboard {
+        flex-direction: column;
+    }
+    .team {
+        margin: 5px 0;
+    }
+}
